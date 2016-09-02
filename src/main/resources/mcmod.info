@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "jlgm_caod",
+  "name": "Cock-an-ore-doo",
+  "description": "Chickens with ore eggs!",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "",
+  "url": "https://minecraft.curseforge.com/projects/Cock-an-ore-doo",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["JoseluGames"],
+  "credits": "Snipe13051 for the idea!",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
