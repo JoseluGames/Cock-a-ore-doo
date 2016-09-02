@@ -18,6 +18,7 @@ public class CAODItem{
 	public static Item goldEgg;
 	public static Item lapisEgg;
 	public static Item redstoneEgg;
+	public static Item glowstoneEgg;
 	public static Item emeraldEgg;
 	public static Item diamondEgg;
 	
@@ -31,6 +32,7 @@ public class CAODItem{
 		goldEgg = new ItemOreEgg(EnumChickenType.GOLD).setUnlocalizedName("oreEgg_gold").setCreativeTab(CreativeTabs.MATERIALS);
 		lapisEgg = new ItemOreEgg(EnumChickenType.LAPIS).setUnlocalizedName("oreEgg_lapis").setCreativeTab(CreativeTabs.MATERIALS);
 		redstoneEgg = new ItemOreEgg(EnumChickenType.REDSTONE).setUnlocalizedName("oreEgg_redstone").setCreativeTab(CreativeTabs.MATERIALS);
+		glowstoneEgg = new ItemOreEgg(EnumChickenType.GLOWSTONE).setUnlocalizedName("oreEgg_glowstone").setCreativeTab(CreativeTabs.MATERIALS);
 		emeraldEgg = new ItemOreEgg(EnumChickenType.EMERALD).setUnlocalizedName("oreEgg_emerald").setCreativeTab(CreativeTabs.MATERIALS);
 		diamondEgg = new ItemOreEgg(EnumChickenType.DIAMOND).setUnlocalizedName("oreEgg_diamond").setCreativeTab(CreativeTabs.MATERIALS);
 	}
@@ -41,6 +43,7 @@ public class CAODItem{
 		GameRegistry.register(goldEgg.setRegistryName("oreEgg_gold"));
 		GameRegistry.register(lapisEgg.setRegistryName("oreEgg_lapis"));
 		GameRegistry.register(redstoneEgg.setRegistryName("oreEgg_redstone"));
+		GameRegistry.register(glowstoneEgg.setRegistryName("oreEgg_glowstone"));
 		GameRegistry.register(emeraldEgg.setRegistryName("oreEgg_emerald"));
 		GameRegistry.register(diamondEgg.setRegistryName("oreEgg_diamond"));
 	}
@@ -52,6 +55,7 @@ public class CAODItem{
 		modelMesherItem.register(goldEgg, 0, new ModelResourceLocation(CAODConstants.MODID + ":" + "oreEgg_gold", "inventory"));
 		modelMesherItem.register(lapisEgg, 0, new ModelResourceLocation(CAODConstants.MODID + ":" + "oreEgg_lapis", "inventory"));
 		modelMesherItem.register(redstoneEgg, 0, new ModelResourceLocation(CAODConstants.MODID + ":" + "oreEgg_redstone", "inventory"));
+		modelMesherItem.register(glowstoneEgg, 0, new ModelResourceLocation(CAODConstants.MODID + ":" + "oreEgg_glowstone", "inventory"));
 		modelMesherItem.register(emeraldEgg, 0, new ModelResourceLocation(CAODConstants.MODID + ":" + "oreEgg_emerald", "inventory"));
 		modelMesherItem.register(diamondEgg, 0, new ModelResourceLocation(CAODConstants.MODID + ":" + "oreEgg_diamond", "inventory"));
 	}

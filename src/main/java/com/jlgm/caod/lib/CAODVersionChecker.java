@@ -19,7 +19,7 @@ public class CAODVersionChecker implements Runnable{
 	public void run(){
 		InputStream in = null;
 		try{
-			in = new URL("https://raw.githubusercontent.com/JoseluGames/Cock-an-ore-doomc-1.10.2/versionCheck.txt").openStream();
+			in = new URL("https://raw.githubusercontent.com/JoseluGames/Cock-an-ore-doo/mc-1.10.2/versionCheck.txt").openStream();
 		}catch(MalformedURLException e){
 			e.printStackTrace();
 		}catch(IOException e){

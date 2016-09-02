@@ -3,7 +3,8 @@ item.oreEgg_iron.name=Huevo de Hierro
 item.oreEgg_gold.name=Huevo de Oro
 item.oreEgg_lapis.name=Huevo de Lapislázuli
 item.oreEgg_redstone.name=Huevo de Redstone
-item.oreEgg_emerald.name==Huevo de Esmeralda
+item.oreEgg_glowstone.name=Huevo de Piedra Luminosa
+item.oreEgg_emerald.name=Huevo de Esmeralda
 item.oreEgg_diamond.name=Huevo de Diamante
 
 entity.oreChicken.name=Gallina de Mena

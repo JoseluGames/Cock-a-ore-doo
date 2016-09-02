@@ -16,24 +16,27 @@ public class CAODHelper {
 		return stack.getItem() == Items.EMERALD || stack.getItem() == Items.DIAMOND || stack.getItem() == Items.GOLD_INGOT
 				|| stack.getItem() == Items.IRON_INGOT || stack.getItem() == Items.COAL
 				|| stack.getItem() == Item.getItemFromBlock(Blocks.REDSTONE_BLOCK)
-				|| stack.isItemEqual(new ItemStack(Items.DYE, 1, 4));
+				|| stack.isItemEqual(new ItemStack(Items.DYE, 1, 4))
+				|| stack.getItem() == Item.getItemFromBlock(Blocks.GLOWSTONE);
 	}
 	
 	public static EnumChickenType getTypeFromItem(ItemStack stack){
-		if(stack.getItem() == Items.EMERALD){
+		if(stack.getItem() == Items.COAL){
+			return EnumChickenType.COAL;
+		}else if(stack.getItem() == Items.IRON_INGOT){
+			return EnumChickenType.IRON;
+		}else if(stack.getItem() == Items.GOLD_INGOT){
+			return EnumChickenType.GOLD;
+		}else if(stack.isItemEqual(new ItemStack(Items.DYE, 1, 4))){
+			return EnumChickenType.LAPIS;
+		}else if(stack.getItem() == Item.getItemFromBlock(Blocks.REDSTONE_BLOCK)){
+			return EnumChickenType.REDSTONE;
+		}else if(stack.getItem() == Item.getItemFromBlock(Blocks.GLOWSTONE)){
+			return EnumChickenType.GLOWSTONE;
+		}else if(stack.getItem() == Items.EMERALD){
 			return EnumChickenType.EMERALD;
 		}else if(stack.getItem() == Items.DIAMOND){
 			return EnumChickenType.DIAMOND;
-		}else if(stack.getItem() == Items.GOLD_INGOT){
-			return EnumChickenType.GOLD;
-		}else if(stack.getItem() == Items.IRON_INGOT){
-			return EnumChickenType.IRON;
-		}else if(stack.getItem() == Items.COAL){
-			return EnumChickenType.COAL;
-		}else if(stack.getItem() == Item.getItemFromBlock(Blocks.REDSTONE_BLOCK)){
-			return EnumChickenType.REDSTONE;
-		}else if(stack.isItemEqual(new ItemStack(Items.DYE, 1, 4))){
-			return EnumChickenType.LAPIS;
 		}
 		return null;
 	}
@@ -44,14 +47,15 @@ public class CAODHelper {
 		GOLD(2, "gold", new Vec3d(234, 238, 87)),
 		LAPIS(3, "lapis", new Vec3d(52, 94, 195)),
 		REDSTONE(4, "redstone", new Vec3d(159, 0, 0)),
-		EMERALD(5, "emerald", new Vec3d(23, 221, 98)),
-		DIAMOND(6, "diamond", new Vec3d(51, 235, 203));
+		GLOWSTONE(5, "glowstone", new Vec3d(210, 210, 0)),
+		EMERALD(6, "emerald", new Vec3d(23, 221, 98)),
+		DIAMOND(7, "diamond", new Vec3d(51, 235, 203));
 
 		private final int index;
 		private final String type;
 		private final Vec3d color;
 		
-		private static final EnumChickenType[] VALUES = new EnumChickenType[7];
+		private static final EnumChickenType[] VALUES = new EnumChickenType[8];
 		private static final Map<String, EnumChickenType> NAME_LOOKUP = Maps.<String, EnumChickenType>newHashMap();
 		
 		private EnumChickenType(int index, String type, Vec3d color){
@@ -80,6 +84,8 @@ public class CAODHelper {
 					return CAODItem.lapisEgg;
 				case REDSTONE:
 					return CAODItem.redstoneEgg;
+				case GLOWSTONE:
+					return CAODItem.glowstoneEgg;
 				case EMERALD:
 					return CAODItem.emeraldEgg;
 				case DIAMOND:
