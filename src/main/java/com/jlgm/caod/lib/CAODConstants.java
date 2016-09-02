@@ -11,7 +11,7 @@ public class CAODConstants{
 	public static final String MAJOR = "0";
 	public static final String MINOR = "1";
 	public static final String PATCH = "0";
-	public static final String RELEASETYPE = "";
+	public static final String RELEASETYPE = "-hotfix";
 	
 	//The version of the mod
 	public static final String VERSION = MCVERSION + "-" + MAJOR + "." + MINOR + "." + PATCH + RELEASETYPE;

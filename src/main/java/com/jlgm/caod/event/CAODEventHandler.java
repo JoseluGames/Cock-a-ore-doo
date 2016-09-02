@@ -59,6 +59,9 @@ public class CAODEventHandler{
 				newChicken.setUniqueId(UUID.randomUUID());
 				event.getWorld().spawnEntityInWorld(newChicken);
 				newChicken.setType(CAODHelper.getTypeFromItem(event.getItemStack()));
+				if(!event.getEntityPlayer().isCreative()){
+					event.getEntityPlayer().inventory.decrStackSize(event.getEntityPlayer().inventory.currentItem, 1);
+				}
 				CAODPacketHandler.INSTANCE.sendToAll(new CAODChickenMessage(newChicken.getPersistentID(), newChicken.getType().getIndex()));
 			}
 		}
