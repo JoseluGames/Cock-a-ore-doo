@@ -1,0 +1,10 @@
+item.oreEgg_coal.name=Coal Egg
+item.oreEgg_iron.name=Iron Egg
+item.oreEgg_gold.name=Gold Egg
+item.oreEgg_lapis.name=Lapis Egg
+item.oreEgg_redstone.name=Redstone Egg
+item.oreEgg_emerald.name=Emerald Egg
+item.oreEgg_diamond.name=Diamong Egg
+
+entity.oreChicken.name=Ore Chicken
+entity.oreEgg.name=Ore Egg
