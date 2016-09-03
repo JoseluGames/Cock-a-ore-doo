@@ -1,8 +1,0 @@
-1.10.2-0.1.0-hotfixOfTheHotfix
-Fix crafting recipes
-##
-1.10.2-0.1.0-hotfix
-Fix item not being consumed
-##
-1.10.2-0.1.0
-First release
